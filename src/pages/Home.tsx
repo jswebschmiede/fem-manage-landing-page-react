@@ -1,6 +1,7 @@
+import Carousel from "../components/Ui/Carousel";
 import HeroHome from "../components/Ui/HeroHome";
 import List from "../components/Ui/List";
-import ListItem from "../components/Ui/ListItem";
+import ListItem from "../components/Ui/List/ListItem";
 
 const Home = () => {
   return (
@@ -44,12 +45,14 @@ const Home = () => {
 
       <section className="carousel py-16">
         <div className="container">
-          <h2 className="mb-9 text-center font-bold md:text-base lg:text-xl">
+          <h2 className="mb-16 text-center font-bold md:text-base lg:text-xl">
             What they’ve said
           </h2>
         </div>
 
-        <div className="container">
+        <Carousel />
+
+        <div className="container pt-16 pb-24">
           <button className="button m-auto block bg-managebrightred text-center text-white">
             Get Started
           </button>

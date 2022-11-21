@@ -1,4 +1,4 @@
-import { LayoutProps } from "../../typings";
+import { LayoutProps } from "../../../typings";
 
 const List = ({ children }: LayoutProps) => {
   return <ul role="list">{children}</ul>;
