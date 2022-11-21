@@ -22,6 +22,8 @@ module.exports = {
     extend: {
       colors: {
         managebrightred: "hsl(12, 88%, 59%)",
+        managebrightredlight: "hsl(12, 88%, 67%)",
+        managebrightredlighter: "hsl(13, 88%, 84%)",
         managepalered: "hsl(13, 100%, 96%)",
         managedarkblue100: "hsl(233, 12%, 13%)",
         managedarkblue400: "hsl(228, 39%, 23%)",

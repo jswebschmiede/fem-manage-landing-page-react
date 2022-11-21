@@ -2,12 +2,12 @@ import Logo from "../../assets/logo.svg";
 
 const Header = () => {
   return (
-    <header className="site-header py-16">
+    <header role="banner" className="site-header py-16">
       <div className="container flex items-center justify-between">
         <a href="#">
           <img src={Logo} alt="Manage" />
         </a>
-        <nav className="hidden lg:block" aria-label="Primary">
+        <nav className="hidden lg:block" aria-label="Primary" role="navigation">
           <ul className="flex space-x-8" role="list">
             <li>
               <a className="nav-link-primary" href="#">

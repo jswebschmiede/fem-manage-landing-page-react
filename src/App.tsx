@@ -7,7 +7,7 @@ function App() {
   return (
     <Layout>
       <Header />
-      <main className="site-content">
+      <main role="main" className="site-content">
         <Home />
       </main>
       <Footer />

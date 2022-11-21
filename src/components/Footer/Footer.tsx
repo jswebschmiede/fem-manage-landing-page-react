@@ -2,7 +2,10 @@ import FooterLogo from "../../assets/logo-footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="site-footer bg-managedarkblue100 py-16 text-white">
+    <footer
+      role="contentinfo"
+      className="site-footer bg-managedarkblue100 py-16 text-white"
+    >
       <div className="container">
         <div className="grid gap-6 md:auto-cols-fr md:grid-flow-col">
           <div className="mb-4 flex max-w-xs flex-col justify-between lg:mb-0">
@@ -156,9 +159,19 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col justify-between">
-            <form action="#">
-              <input type="email" name="email" id="email" required />
-              <button className="button" type="submit">
+            <form className="flex justify-between space-x-4" action="#">
+              <input
+                className="w-full rounded-3xl text-black"
+                type="email"
+                name="email"
+                placeholder="your email"
+                id="email"
+                required
+              />
+              <button
+                className="button bg-managebrightred hover:bg-managebrightredlight"
+                type="submit"
+              >
                 Go
               </button>
             </form>

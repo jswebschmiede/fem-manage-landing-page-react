@@ -62,7 +62,7 @@ const Home = () => {
             <p className="w-5/12 font-medium md:text-base lg:text-xl">
               Simplify how your team works today.
             </p>
-            <button className="button bg-white text-managebrightred">
+            <button className="button bg-white text-managebrightred hover:bg-white hover:text-managebrightredlight">
               Get Started
             </button>
           </div>
