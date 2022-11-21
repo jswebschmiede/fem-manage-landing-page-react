@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply h-full overflow-x-hidden;
+  }
+
+  body {
+    @apply text-managedarkblue400 antialiased scrollbar-thin scrollbar-thumb-rounded scrollbar-track-transparent scrollbar-thumb-managedarkblue100;
+  }
+
+  a {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+}
+
+@layer components {
+  .text {
+    @apply mb-9 text-managedarkgray;
+  }
+
+  .nav-link-primary {
+    @apply text-sm hover:text-managedarkgray;
+  }
+
+  .button {
+    @apply rounded-3xl py-3 px-6 text-sm shadow-2xl transition-opacity duration-300 ease-in-out hover:opacity-75;
+  }
+}
