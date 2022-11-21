@@ -169,7 +169,7 @@ const Footer = () => {
                 required
               />
               <button
-                className="button bg-managebrightred hover:bg-managebrightredlight"
+                className="button bg-managebrightred px-6 hover:bg-managebrightredlight"
                 type="submit"
               >
                 Go

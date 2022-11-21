@@ -46,6 +46,19 @@ module.exports = {
       backgroundImage: {
         "simplify-pattern": "url('./assets/bg-simplify-section-desktop.svg')",
       },
+      animation: {
+        "button-pop": "button-pop .25s ease-out",
+      },
+      keyframes: {
+        "button-pop": {
+          "0%": { transform: "scale(.95)" },
+          "40%": { transform: "scale(1.02)" },
+          to: { transform: "scale(1)" },
+        },
+      },
+      transitionTimingFunction: {
+        "in-expo": "cubic-bezier(.4,0,.2,1)",
+      },
     },
   },
   variants: {

@@ -27,7 +27,7 @@
   }
 
   .button {
-    @apply rounded-3xl py-3 px-6 text-sm shadow-2xl transition-all duration-300 ease-in-out hover:bg-managebrightredlight;
+    @apply animate-button-pop rounded-3xl py-3 px-8 text-sm shadow-2xl transition-all duration-300 ease-in-expo will-change-transform hover:bg-managebrightredlight focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-managebrightredlight active:focus:scale-95;
   }
 
   .social-link-item svg {
