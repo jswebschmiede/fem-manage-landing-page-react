@@ -5,7 +5,7 @@ const HeroHome = () => {
     <section className="container py-16">
       <div className="grid items-center gap-5 md:auto-cols-fr md:grid-flow-col">
         <div>
-          <h1 className="mb-9 font-bold md:text-lg lg:text-2xl">
+          <h1 className="mb-9 text-lg font-bold lg:text-2xl">
             Bring everyone together to build better products.
           </h1>
           <p className="text w-7/12">

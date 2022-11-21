@@ -3,20 +3,16 @@ module.exports = {
   content: ["index.html", "./src/**/*.{js,jsx,ts,tsx,vue,html}"],
   theme: {
     screens: {
-      xs: "32rem", // ~512px
-      sm: "48rem", // ~768px
-      md: "64rem", // ~1024px
-      lg: "70rem", // ~1120px
+      xs: "34rem", // ~512px
+      sm: "50rem", // ~768px
+      md: "66rem", // ~1024px
+      lg: "74rem", // ~1120px
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: "2rem",
-        xs: "0",
-        sm: "0",
-        md: "0",
-        lg: "0",
-        xl: "0",
+        DEFAULT: "1rem",
+        sm: "2rem",
       },
     },
     extend: {

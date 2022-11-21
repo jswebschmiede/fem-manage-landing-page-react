@@ -13,7 +13,7 @@ const ListItem = ({ number, title, children }: ListItem) => {
         </span>
       </div>
       <div>
-        <h3 className="mb-5 text-sm font-bold md:text-base">{title}</h3>
+        <h3 className="mb-5 text-base font-bold">{title}</h3>
         <p className="text ml-21">{children}</p>
       </div>
     </li>

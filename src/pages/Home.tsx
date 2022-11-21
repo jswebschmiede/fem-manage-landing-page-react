@@ -11,7 +11,7 @@ const Home = () => {
       <section className="container py-16">
         <div className="grid gap-5 md:auto-cols-fr md:grid-flow-col">
           <div>
-            <h2 className="mb-9 font-bold md:text-base lg:text-xl">
+            <h2 className="mb-9 text-lg font-bold lg:text-xl">
               What´s different about Manage?
             </h2>
             <p className="text w-7/12">
@@ -45,7 +45,7 @@ const Home = () => {
 
       <section className="carousel py-16">
         <div className="container">
-          <h2 className="mb-16 text-center font-bold md:text-base lg:text-xl">
+          <h2 className="mb-16 text-center text-lg font-bold lg:text-xl">
             What they’ve said
           </h2>
         </div>
@@ -62,7 +62,7 @@ const Home = () => {
       <section className="cta bg-managebrightred bg-simplify-pattern bg-[100%_auto] bg-[bottom_right_-215px] bg-no-repeat text-white">
         <div className="container py-20">
           <div className="flex items-center justify-between">
-            <p className="w-5/12 font-medium md:text-base lg:text-xl">
+            <p className="w-5/12 text-lg font-medium lg:text-xl">
               Simplify how your team works today.
             </p>
             <button className="button bg-white text-managebrightred hover:bg-white hover:text-managebrightredlight">
