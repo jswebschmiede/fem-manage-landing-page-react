@@ -1,6 +1,6 @@
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Layout from "./components/ui/Layout";
+import Layout from "./components/Ui/Layout";
 import Home from "./pages/Home";
 
 function App() {

@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html", "./src/**/*.{js,jsx,ts,tsx,vue,html}"],
   theme: {
@@ -5,8 +6,7 @@ module.exports = {
       xs: "32rem", // ~512px
       sm: "48rem", // ~768px
       md: "64rem", // ~1024px
-      lg: "80rem", // ~1280px
-      xl: "90rem", // ~1440px
+      lg: "70rem", // ~1120px
     },
     container: {
       center: true,
@@ -41,14 +41,13 @@ module.exports = {
         xl: ["2.5rem", { lineHeight: "2.75rem" }],
         "2xl": ["3.5rem", { lineHeight: "1" }],
       },
+      backgroundImage: {
+        "simplify-pattern": "url('./assets/bg-simplify-section-desktop.svg')",
+      },
     },
   },
   variants: {
     scrollbar: ["dark", "rounded"],
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("tailwind-scrollbar"),
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
