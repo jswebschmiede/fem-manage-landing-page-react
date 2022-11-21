@@ -1,4 +1,4 @@
-import { LayoutProps } from "../..";
+import { LayoutProps } from "../../typings";
 
 const Layout = ({ children }: LayoutProps) => {
   return <>{children}</>;
