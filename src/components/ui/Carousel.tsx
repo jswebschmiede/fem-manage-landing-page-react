@@ -8,13 +8,7 @@ import AvatarShanai from "./../../assets/avatar-shanai.png";
 
 const Carousel = () => {
   return (
-    <Swiper
-      spaceBetween={30}
-      slidesPerView={3}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-      className="cursor-move"
-    >
+    <Swiper spaceBetween={30} slidesPerView={3} className="cursor-move">
       <SwiperSlide className="pt-[2.28125rem]">
         <Testimonials image={AvatarAnisha} name="Anisha Li">
           “Manage has supercharged our team’s workflow. The ability to maintain

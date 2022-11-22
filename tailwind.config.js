@@ -3,13 +3,21 @@ module.exports = {
   content: ["index.html", "./src/**/*.{js,jsx,ts,tsx,vue,html}"],
   theme: {
     screens: {
-      xs: "34rem", // ~512px
-      sm: "50rem", // ~768px
-      md: "66rem", // ~1024px
-      lg: "74rem", // ~1120px
+      xs: "34em", // ~512px
+      sm: "50em", // ~768px
+      md: "66em", // ~1024px
+      lg: "74em", // ~1120px
+      xl: "90em", // ~1440px
+      xxl: "107.5em", // ~1720px
     },
     container: {
       center: true,
+      screens: {
+        xs: "34em", // ~512px
+        sm: "50em", // ~768px
+        md: "66em", // ~1024px
+        lg: "74em", // ~1120px
+      },
       padding: {
         DEFAULT: "1rem",
         sm: "2rem",
@@ -41,6 +49,7 @@ module.exports = {
       },
       backgroundImage: {
         "simplify-pattern": "url('./assets/bg-simplify-section-desktop.svg')",
+        "tablet-pattern": "url('./assets/bg-tablet-pattern.svg')",
       },
       animation: {
         "button-pop": "button-pop .25s ease-out",

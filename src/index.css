@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply h-full overflow-x-hidden selection:bg-managebrightred selection:text-white;
+    @apply min-h-full overflow-x-hidden selection:bg-managebrightred selection:text-white;
   }
 
   body {

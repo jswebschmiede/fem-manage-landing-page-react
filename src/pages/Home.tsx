@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <HeroHome />
 
-      <section className="container py-16">
+      <section className="container relative py-16">
         <div className="grid gap-5 md:auto-cols-fr md:grid-flow-col">
           <div>
             <h2 className="mb-9 text-lg font-bold lg:text-xl">
@@ -41,6 +41,11 @@ const Home = () => {
             </ListItem>
           </List>
         </div>
+
+        <div
+          aria-hidden="true"
+          className="absolute top-[10rem] -left-[44vw] -z-10 aspect-square min-h-[70vh] w-[85%] bg-tablet-pattern bg-[bottom_left] bg-no-repeat"
+        ></div>
       </section>
 
       <section className="carousel py-16">
