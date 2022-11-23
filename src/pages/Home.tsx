@@ -8,13 +8,13 @@ const Home = () => {
     <>
       <HeroHome />
 
-      <section className="container relative py-16">
+      <section className="container relative mt-24 py-16 lg:mt-0">
         <div className="grid gap-5 md:auto-cols-fr md:grid-flow-col">
           <div>
-            <h2 className="mb-9 text-lg font-bold lg:text-xl">
+            <h2 className="mb-9 text-center text-xl font-bold lg:text-left lg:text-xl">
               What´s different about Manage?
             </h2>
-            <p className="text w-7/12">
+            <p className="text text-center lg:w-7/12 lg:text-left">
               Manage provides all the functionality your team needs, without the
               complexity. Our software is tailor-made for modern digital product
               teams.
@@ -44,13 +44,13 @@ const Home = () => {
 
         <div
           aria-hidden="true"
-          className="absolute top-[10rem] -left-[44vw] -z-10 aspect-square min-h-[70vh] w-[85%] bg-tablet-pattern bg-[bottom_left] bg-no-repeat"
+          className="absolute -top-[36rem] -right-[120%] -z-10 aspect-square min-h-screen w-auto -scale-50 bg-tablet-pattern bg-[bottom_left] bg-no-repeat lg:top-[10rem] lg:-left-[44vw] lg:min-h-[70vh] lg:w-[85%] lg:scale-100"
         ></div>
       </section>
 
-      <section className="carousel py-16">
+      <section className="carousel py-8 lg:py-16">
         <div className="container">
-          <h2 className="mb-16 text-center text-lg font-bold lg:text-xl">
+          <h2 className="mb-16 text-center text-xl font-bold lg:text-left lg:text-2xl">
             What they’ve said
           </h2>
         </div>
@@ -66,8 +66,8 @@ const Home = () => {
 
       <section className="cta bg-managebrightred bg-simplify-pattern bg-[100%_auto] bg-[bottom_right_-215px] bg-no-repeat text-white">
         <div className="container py-20">
-          <div className="flex items-center justify-between">
-            <p className="w-5/12 text-lg font-medium lg:text-xl">
+          <div className="flex flex-col items-center lg:flex-row lg:justify-between">
+            <p className="mb-8 text-center text-xl font-bold lg:mb-0 lg:w-5/12 lg:text-left lg:text-2xl">
               Simplify how your team works today.
             </p>
             <button className="button bg-white text-managebrightred hover:bg-white hover:text-managebrightredlight">

@@ -19,7 +19,7 @@ module.exports = {
         lg: "74em", // ~1120px
       },
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: "1.45rem",
         sm: "2rem",
       },
     },
@@ -41,10 +41,10 @@ module.exports = {
 
       fontSize: {
         xs: ["0.8125rem", { lineHeight: "1rem" }],
-        sm: ["0.875rem", { lineHeight: "1.25rem" }],
-        base: ["1rem", { lineHeight: "1.5rem" }],
-        lg: ["1.875rem", { lineHeight: "2.25rem" }],
-        xl: ["2.5rem", { lineHeight: "2.75rem" }],
+        sm: ["0.875rem", { lineHeight: "1.45rem" }],
+        base: ["1rem", { lineHeight: "1.65rem" }],
+        lg: ["1.875rem", { lineHeight: "2.45rem" }],
+        xl: ["2.5rem", { lineHeight: "3rem" }],
         "2xl": ["3.5rem", { lineHeight: "1" }],
       },
       backgroundImage: {

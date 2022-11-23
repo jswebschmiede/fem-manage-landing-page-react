@@ -1,6 +1,13 @@
+import { useState } from "react";
 import Logo from "../../assets/logo.svg";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const toggleMobilMenuHandler = () => {
+    setOpen(!open);
+  };
+
   return (
     <header role="banner" className="site-header py-16">
       <div className="container flex items-center justify-between">
@@ -36,8 +43,31 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="button bg-managebrightred text-white">
+        <button className="button hidden bg-managebrightred text-white lg:block">
           Get Started
+        </button>
+
+        <button
+          onClick={toggleMobilMenuHandler}
+          className="relative -mt-2 flex h-10 w-10 items-center justify-center focus:outline-none md:hidden"
+        >
+          <div className="flex w-6 transform items-center justify-center">
+            <span
+              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
+                open ? `rotate-45` : `-translate-y-2`
+              }`}
+            ></span>
+            <span
+              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
+                open ? `opacity-0` : `opacity-100`
+              }`}
+            ></span>
+            <span
+              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
+                open ? `-rotate-45` : `translate-y-2`
+              }`}
+            ></span>
+          </div>
         </button>
       </div>
     </header>

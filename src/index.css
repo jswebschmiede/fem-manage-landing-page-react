@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply min-h-full overflow-x-hidden selection:bg-managebrightred selection:text-white;
+    @apply min-h-full selection:bg-managebrightred selection:text-white;
   }
 
   body {
@@ -33,4 +33,20 @@
   .social-link-item svg {
     @apply transition-all duration-300 ease-in-out will-change-transform hover:scale-125 hover:text-managebrightred;
   }
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-pagination {
+  @apply -bottom-8 block md:hidden;
+  transform: translate3d(0, 3rem, 0) !important;
+}
+
+.swiper-pagination-bullet {
+  --swiper-pagination-color: theme(colors.managebrightred);
+  --swiper-pagination-bullet-inactive-color: transparent;
+  --swiper-pagination-bullet-horizontal-gap: 2px;
+  @apply border-2 border-managebrightred;
 }
