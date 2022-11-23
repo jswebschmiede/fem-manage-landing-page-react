@@ -16,7 +16,7 @@ const Carousel = () => {
       breakpoints={{
         1024: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 30,
         },
       }}
       slidesPerView={1}
