@@ -1,10 +1,10 @@
-interface TestimonialsProps {
+export interface TestimonialsProps {
   image: string;
   name: string;
-  children: string;
+  text: string;
 }
 
-const Testimonials = ({ image, name, children }: TestimonialsProps) => {
+const Testimonials = ({ image, name, text }: TestimonialsProps) => {
   return (
     <div className="flex flex-col items-center bg-managelightgray text-center">
       <figure className="-mt-[2.28125rem]">
@@ -12,7 +12,7 @@ const Testimonials = ({ image, name, children }: TestimonialsProps) => {
         <figcaption className="py-4 font-semibold">{name}</figcaption>
       </figure>
 
-      <p className="text px-6">{children}</p>
+      <p className="text px-6">{text}</p>
     </div>
   );
 };
