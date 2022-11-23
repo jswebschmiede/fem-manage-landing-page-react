@@ -1,20 +1,18 @@
-interface ListItem {
+export interface ListProp {
   number: string;
   title: string;
-  children: string;
+  description: string;
 }
 
-const ListItem = ({ number, title, children }: ListItem) => {
+const ListItem = ({ number, title, description }: ListProp) => {
   return (
-    <li className="flex items-baseline">
-      <div className="mr-7" aria-hidden="true">
-        <span className="flex grow-0 rounded-3xl bg-managebrightred py-2 px-6 text-base font-medium tracking-tighter text-white">
-          {number}
-        </span>
+    <li className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row">
+      <div className="flex h-7 w-12 items-center justify-center rounded-2xl bg-managebrightred text-white sm:shrink-0">
+        <span aria-hidden="true">{number}</span>
       </div>
-      <div>
-        <h3 className="mb-5 text-base font-bold">{title}</h3>
-        <p className="text ml-21">{children}</p>
+      <div className="sm:min-w-0 sm:flex-1">
+        <h3 className="mb-5 font-bold">{title}</h3>
+        <p className="text">{description}</p>
       </div>
     </li>
   );
