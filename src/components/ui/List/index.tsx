@@ -23,7 +23,7 @@ const features: ListProp[] = [
 
 const List = () => {
   return (
-    <ul className="[counter-reset: list-number]" role="list">
+    <ul role="list">
       {features.map((feature) => (
         <ListItem
           key={feature.number}

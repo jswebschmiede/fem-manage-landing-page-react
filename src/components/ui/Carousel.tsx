@@ -48,7 +48,7 @@ const Carousel = () => {
       className="cursor-move"
     >
       {testimonials.map((testimonial) => (
-        <SwiperSlide className="pt-[2.28125rem]">
+        <SwiperSlide key={testimonial.name} className="pt-[2.28125rem]">
           <Testimonials
             image={testimonial.image}
             name={testimonial.name}
