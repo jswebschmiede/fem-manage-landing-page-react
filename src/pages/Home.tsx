@@ -1,6 +1,7 @@
 import Carousel from "../components/Ui/Carousel";
 import HeroHome from "../components/Ui/HeroHome";
 import List from "../components/Ui/List";
+
 const Home = () => {
   return (
     <>
