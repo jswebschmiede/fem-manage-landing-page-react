@@ -23,6 +23,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Facebook"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                   <path
@@ -38,6 +39,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Youtube"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
                   <path
@@ -53,6 +55,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Twitter"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
                   <path
@@ -68,6 +71,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Pinterest"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                   <path
@@ -83,6 +87,7 @@ const Footer = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Instagram"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
                   <path
