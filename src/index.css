@@ -31,7 +31,7 @@
   }
 
   .social-link-item svg {
-    @apply transition-all duration-300 ease-in-out will-change-transform hover:scale-125 hover:text-managebrightred;
+    @apply aspect-square scale-150 transition-all duration-300 ease-in-out will-change-transform hover:text-managebrightred lg:scale-100 lg:hover:scale-125;
   }
 }
 

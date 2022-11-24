@@ -7,13 +7,13 @@ const Footer = () => {
       className="site-footer bg-managedarkblue100 py-16 text-white"
     >
       <div className="container">
-        <div className="grid grid-cols-5 gap-6 grid-areas-footer-slim lg:grid-areas-footer-wide">
+        <div className="grid grid-cols-1 gap-y-6 gap-x-6 grid-areas-footer-slim lg:grid-cols-[min-content_1fr_auto] lg:gap-y-16 lg:grid-areas-footer-wide">
           <a className="grid-in-logo" href="#" aria-label="Home">
-            <img src={FooterLogo} alt="Manage" />
+            <img className="m-auto lg:m-0" src={FooterLogo} alt="Manage" />
           </a>
 
           <ul
-            className="flex gap-4 grid-in-social"
+            className="flex justify-between px-2 py-6 grid-in-social lg:justify-start lg:gap-4 lg:p-0"
             role="list"
             aria-label="Social"
           >
@@ -94,9 +94,12 @@ const Footer = () => {
             </li>
           </ul>
 
-          <nav className="grid-in-nav" aria-label="Footer">
+          <nav
+            className="m-auto w-[80%] py-4 grid-in-nav lg:w-[75%] lg:py-0"
+            aria-label="Footer"
+          >
             <ul
-              className="columns-2 space-y-3 px-6 text-managedarkgray lg:px-0"
+              className="columns-2 space-y-3 text-managedarkgray lg:px-0"
               role="list"
             >
               <li>
@@ -154,7 +157,7 @@ const Footer = () => {
             </button>
           </form>
 
-          <div className="text-right text-sm text-managedarkgray grid-in-copyright">
+          <div className="text-center text-sm text-managedarkgray grid-in-copyright lg:text-right">
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>

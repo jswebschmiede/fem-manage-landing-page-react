@@ -65,11 +65,8 @@ module.exports = {
         "in-expo": "cubic-bezier(.4,0,.2,1)",
       },
       gridTemplateAreas: {
-        "footer-wide": ["logo social nav form copyright"],
-        "footer-slim": ["form nav social logo copyright"],
-      },
-      gridTemplateColumns: {
-        "footer-wide": "1fr 1fr 1fr 1fr 1fr",
+        "footer-wide": ["logo nav form", "social nav copyright"],
+        "footer-slim": ["form", "nav", "social", "logo", "copyright"],
       },
     },
   },
