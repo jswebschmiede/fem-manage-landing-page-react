@@ -35,6 +35,9 @@
   }
 }
 
+@layer utilities {
+}
+
 /* swiper overrides */
 .swiper {
   overflow: visible !important;

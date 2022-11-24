@@ -12,6 +12,7 @@
     "swiper": "^8.4.5"
   },
   "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^3.0.0",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.8",
     "@types/react": "^17.0.33",

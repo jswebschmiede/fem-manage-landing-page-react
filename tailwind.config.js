@@ -64,10 +64,22 @@ module.exports = {
       transitionTimingFunction: {
         "in-expo": "cubic-bezier(.4,0,.2,1)",
       },
+      gridTemplateAreas: {
+        "footer-wide": ["logo social nav form copyright"],
+        "footer-slim": ["form nav social logo copyright"],
+      },
+      gridTemplateColumns: {
+        "footer-wide": "1fr 1fr 1fr 1fr 1fr",
+      },
     },
   },
   variants: {
     scrollbar: ["dark", "rounded"],
+    gridTemplateAreas: ["responsive"],
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("tailwind-scrollbar"),
+    require("@savvywombat/tailwindcss-grid-areas"),
+  ],
 };
