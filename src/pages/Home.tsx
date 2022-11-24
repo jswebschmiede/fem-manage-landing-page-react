@@ -48,7 +48,7 @@ const Home = () => {
       <section className="cta bg-managebrightred bg-simplify-pattern bg-[100%_auto] bg-[bottom_right_-215px] bg-no-repeat text-white">
         <div className="container py-20">
           <div className="flex flex-col items-center lg:flex-row lg:justify-between">
-            <h2 className="mb-8 text-center text-xl font-bold lg:mb-0 lg:w-5/12 lg:text-left lg:text-2xl">
+            <h2 className="mb-8 text-center text-lg font-bold lg:mb-0 lg:w-6/12 lg:text-left lg:text-xl">
               Simplify how your team works today.
             </h2>
             <button className="button bg-white text-managebrightred hover:bg-white hover:text-managebrightredlight">
