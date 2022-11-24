@@ -2,10 +2,7 @@ import FooterLogo from "../../assets/logo-footer.svg";
 
 const Footer = () => {
   return (
-    <footer
-      role="contentinfo"
-      className="site-footer bg-managedarkblue100 py-16 text-white"
-    >
+    <footer className="site-footer bg-managedarkblue100 py-16 text-white">
       <div className="container">
         <div className="grid grid-cols-1 gap-y-6 gap-x-6 grid-areas-footer-slim lg:grid-cols-[min-content_1fr_auto] lg:gap-y-16 lg:grid-areas-footer-wide">
           <a className="grid-in-logo" href="#" aria-label="Home">
@@ -14,7 +11,6 @@ const Footer = () => {
 
           <ul
             className="flex justify-between px-2 py-6 grid-in-social lg:justify-start lg:gap-4 lg:p-0"
-            role="list"
             aria-label="Social"
           >
             <li>
@@ -103,10 +99,7 @@ const Footer = () => {
             className="m-auto w-[80%] py-4 grid-in-nav lg:w-[75%] lg:py-0"
             aria-label="Footer"
           >
-            <ul
-              className="columns-2 space-y-3 text-managedarkgray lg:px-0"
-              role="list"
-            >
+            <ul className="columns-2 space-y-3 text-managedarkgray lg:px-0">
               <li>
                 <a className="hover:text-managebrightred" href="#">
                   Home

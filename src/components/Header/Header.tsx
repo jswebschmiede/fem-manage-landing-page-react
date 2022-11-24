@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header role="banner" className="site-header py-16">
+    <header className="site-header py-16">
       {open && (
         <div
           className={`fixed top-0 z-10 h-full w-full bg-gradient-to-b from-transparent to-black lg:hidden ${
@@ -31,7 +31,7 @@ const Header = () => {
           onClick={toggleMobilMenuHandler}
           className="relative z-20 -mt-2 flex h-10 w-10 items-center justify-center focus:outline-none md:hidden"
         >
-          <div className="flex w-6 transform items-center justify-center">
+          <span className="flex w-6 transform items-center justify-center">
             <span
               className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
                 open ? `rotate-45` : `-translate-y-2`
@@ -47,7 +47,7 @@ const Header = () => {
                 open ? `-rotate-45` : `translate-y-2`
               }`}
             ></span>
-          </div>
+          </span>
         </button>
 
         <nav
@@ -56,12 +56,8 @@ const Header = () => {
             open ? `block` : `hidden`
           }`}
           aria-label="Primary"
-          role="navigation"
         >
-          <ul
-            className="flex flex-col space-y-4 rounded-lg bg-white p-8 text-center font-semibold md:flex-row md:space-y-0 md:space-x-8 md:p-0 md:text-left md:font-normal"
-            role="list"
-          >
+          <ul className="flex flex-col space-y-4 rounded-lg bg-white p-8 text-center font-semibold md:flex-row md:space-y-0 md:space-x-8 md:p-0 md:text-left md:font-normal">
             <li>
               <a className="nav-link-primary" href="#">
                 Pricing
