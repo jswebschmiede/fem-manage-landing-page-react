@@ -25,7 +25,7 @@ const Home = () => {
 
         <div
           aria-hidden="true"
-          className="absolute -top-[36rem] -right-[120%] -z-10 aspect-square min-h-screen w-auto -scale-50 bg-tablet-pattern bg-[bottom_left] bg-no-repeat lg:top-[10rem] lg:-left-[44vw] lg:min-h-[70vh] lg:w-[85%] lg:scale-100"
+          className="absolute -top-[36rem] -right-[120%] -z-10 aspect-square min-h-screen w-auto -scale-50 bg-tablet-pattern bg-[bottom_left] bg-no-repeat lg:top-[10rem] lg:-left-[44rem] lg:min-h-[70vh] lg:w-[85%] lg:scale-100"
         ></div>
       </section>
 

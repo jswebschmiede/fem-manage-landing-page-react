@@ -52,14 +52,14 @@ const Header = () => {
 
         <nav
           id="primary-navigation"
-          className={`fixed top-[15%] z-20 w-[calc(100%_-_2.90rem)] shadow-[0_0_0.75em_rgb(0,0,0,0.05)] lg:static lg:block lg:w-auto lg:shadow-none ${
+          className={`fixed top-[8rem] left-0 right-0 z-20 m-auto w-[calc(100%_-_2.90rem)] max-w-md shadow-[0_0_0.75em_rgb(0,0,0,0.05)] md:static md:block md:w-auto md:max-w-none md:shadow-none ${
             open ? `block` : `hidden`
           }`}
           aria-label="Primary"
           role="navigation"
         >
           <ul
-            className="flex flex-col space-y-4 rounded-lg bg-white p-8 text-center font-semibold lg:flex-row lg:space-y-0 lg:space-x-8 lg:p-0 lg:text-left lg:font-normal"
+            className="flex flex-col space-y-4 rounded-lg bg-white p-8 text-center font-semibold md:flex-row md:space-y-0 md:space-x-8 md:p-0 md:text-left md:font-normal"
             role="list"
           >
             <li>
@@ -89,7 +89,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="button hidden bg-managebrightred text-white lg:block">
+        <button className="button hidden bg-managebrightred text-white md:block">
           Get Started
         </button>
       </div>

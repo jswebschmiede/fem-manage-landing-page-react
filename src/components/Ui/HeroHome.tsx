@@ -4,7 +4,7 @@ const HeroHome = () => {
   return (
     <section className="container lg:py-16">
       <div className="grid items-center gap-5 text-center md:auto-cols-fr md:grid-flow-col lg:text-left">
-        <div className="order-2 pt-8 lg:order-1 lg:pt-0">
+        <div className="order-2 pt-8 md:order-1 md:pt-0">
           <h1 className="mb-9 text-xl font-bold lg:text-2xl">
             Bring everyone together to build better products.
           </h1>
@@ -17,7 +17,7 @@ const HeroHome = () => {
           </button>
         </div>
 
-        <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
+        <div className="order-1 flex justify-center md:order-2 md:justify-end">
           <img
             className="scale-[1.08]"
             src={IllustrationIntro}
