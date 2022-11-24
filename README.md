@@ -39,9 +39,10 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Tailwind
 - Mobile-first workflow
+- [Tailwind](https://tailwindcss.com/)
 - [React](https://reactjs.org/) - JS library
+- [Typescript](https://www.typescriptlang.org/) - Typesave JS
 
 ### Useful resources
 
