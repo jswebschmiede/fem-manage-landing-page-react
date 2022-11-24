@@ -23,7 +23,7 @@
   }
 
   .nav-link-primary {
-    @apply text-sm hover:text-managedarkgray;
+    @apply text-base hover:text-managedarkgray lg:text-sm;
   }
 
   .button {

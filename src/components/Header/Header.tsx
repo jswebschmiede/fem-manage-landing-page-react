@@ -10,12 +10,58 @@ const Header = () => {
 
   return (
     <header role="banner" className="site-header py-16">
+      {open && (
+        <div
+          className={`fixed top-0 z-10 h-full w-full bg-gradient-to-b from-transparent to-black lg:hidden ${
+            open ? `block` : `hidden`
+          }`}
+          aria-hidden="true"
+          onClick={toggleMobilMenuHandler}
+        ></div>
+      )}
       <div className="container flex items-center justify-between">
         <a href="#">
           <img src={Logo} alt="Manage" />
         </a>
-        <nav className="hidden lg:block" aria-label="Primary" role="navigation">
-          <ul className="flex space-x-8" role="list">
+
+        <button
+          aria-controls="primary-navigation"
+          aria-expanded={open ? "true" : "false"}
+          aria-hidden="true"
+          onClick={toggleMobilMenuHandler}
+          className="relative z-20 -mt-2 flex h-10 w-10 items-center justify-center focus:outline-none md:hidden"
+        >
+          <div className="flex w-6 transform items-center justify-center">
+            <span
+              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
+                open ? `rotate-45` : `-translate-y-2`
+              }`}
+            ></span>
+            <span
+              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
+                open ? `opacity-0` : `opacity-100`
+              }`}
+            ></span>
+            <span
+              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
+                open ? `-rotate-45` : `translate-y-2`
+              }`}
+            ></span>
+          </div>
+        </button>
+
+        <nav
+          id="primary-navigation"
+          className={`fixed top-[15%] z-20 w-[calc(100%_-_2.90rem)] shadow-[0_0_0.75em_rgb(0,0,0,0.05)] lg:static lg:block lg:w-auto lg:shadow-none ${
+            open ? `block` : `hidden`
+          }`}
+          aria-label="Primary"
+          role="navigation"
+        >
+          <ul
+            className="flex flex-col space-y-4 rounded-lg bg-white p-8 text-center font-semibold lg:flex-row lg:space-y-0 lg:space-x-8 lg:p-0 lg:text-left lg:font-normal"
+            role="list"
+          >
             <li>
               <a className="nav-link-primary" href="#">
                 Pricing
@@ -45,29 +91,6 @@ const Header = () => {
         </nav>
         <button className="button hidden bg-managebrightred text-white lg:block">
           Get Started
-        </button>
-
-        <button
-          onClick={toggleMobilMenuHandler}
-          className="relative -mt-2 flex h-10 w-10 items-center justify-center focus:outline-none md:hidden"
-        >
-          <div className="flex w-6 transform items-center justify-center">
-            <span
-              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
-                open ? `rotate-45` : `-translate-y-2`
-              }`}
-            ></span>
-            <span
-              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
-                open ? `opacity-0` : `opacity-100`
-              }`}
-            ></span>
-            <span
-              className={`text-mabg-managedarkblue400 absolute block h-1 w-7 transform bg-managedarkblue400 transition duration-500 ease-in-out ${
-                open ? `-rotate-45` : `translate-y-2`
-              }`}
-            ></span>
-          </div>
         </button>
       </div>
     </header>

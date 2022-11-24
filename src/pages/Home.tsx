@@ -10,7 +10,7 @@ const Home = () => {
       <section className="container relative mt-24 py-16 lg:mt-0">
         <div className="grid gap-5 md:auto-cols-fr md:grid-flow-col">
           <div>
-            <h2 className="mb-9 text-center text-xl font-bold lg:text-left lg:text-xl">
+            <h2 className="mb-9 text-center text-xl font-bold lg:text-left lg:text-2xl">
               What´s different about Manage?
             </h2>
             <p className="text text-center lg:w-7/12 lg:text-left">
